@@ -1,0 +1,57 @@
+.checkout-form {
+  margin-top: 20px;
+}
+
+.payment-element-container {
+  margin-bottom: 24px;
+}
+
+.pay-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: linear-gradient(135deg, var(--success), #059669);
+  color: white;
+  padding: 18px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 24px;
+  transition: all 0.3s ease;
+}
+
+.pay-button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #059669, #047857);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(16, 185, 129, 0.4);
+}
+
+.pay-button:disabled {
+  background: var(--border);
+  cursor: not-allowed;
+  transform: none;
+}
+
+.pay-button i {
+  font-size: 18px;
+}
+
+.error-message {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fee2e2;
+  color: var(--danger);
+  padding: 16px;
+  border-radius: 10px;
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  border-left: 4px solid var(--danger);
+}
+
+.error-message i {
+  font-size: 20px;
+}
